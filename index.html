@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Amada ❤️</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-bg': '#f8f0e3', /* Tom de bege claro do fundo da imagem */
+                        'secondary-bg': '#fce4ec', /* Rosa bem claro */
+                        'accent-color': '#e91e63', /* Rosa mais vibrante */
+                        'text-primary': '#37474f', /* Cinza azulado escuro para o texto principal */
+                        'text-secondary': '#78909c', /* Cinza azulado mais claro */
+                        'link-color': '#00897b', /* Verde azulado para links */
+                        'link-hover': '#00695c',
+                        'border-color': '#d1c4e9', /* Lilás claro para bordas */
+                        'modal-bg-dark': 'rgba(0, 0, 0, 0.7)', /* Fundo do modal escuro */
+                        'modal-content-bg-light': '#fefefe', /* Fundo do conteúdo do modal claro */
+                    },
+                    fontFamily: {
+                        cursive: ['"Dancing Script"', 'cursive'],
+                        heading: ['"Playfair Display"', 'serif'],
+                        body: ['"Open Sans"', 'sans-serif'],
+                    },
+                    animation: {
+                        twist: 'twist 0.5s ease-in-out forwards',
+                        untwist: 'untwist 0.5s ease-in-out forwards',
+                    },
+                    keyframes: {
+                        twist: {
+                            '0%': { transform: 'rotateY(0deg)', opacity: '1' },
+                            '100%': { transform: 'rotateY(90deg)', opacity: '0' },
+                        },
+                        untwist: {
+                            '0%': { transform: 'rotateY(-90deg)', opacity: '0' },
+                            '100%': { transform: 'rotateY(0deg)', opacity: '1' },
+                        },
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <style>
+        /* Esconde o scrollbar */
+        .custom-scrollbar::-webkit-scrollbar { display: none; width: 0; height: 0; }
+        .custom-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
+        body {
+            background-image: url('imagens/background.jpg'); /* Caminho para a pasta 'imagens' */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+
+        /* Cores Tailwind customizadas (repetidas para garantir compatibilidade com o CDN) */
+        .bg-primary-bg { background-color: #f8f0e3; }
+        .bg-secondary-bg { background-color: #fce4ec; }
+        .text-primary { color: #37474f; }
+        .text-secondary { color: #78909c; }
+        .text-accent { color: #e91e63; }
+        .border-primary { border-color: #d1c4e9; }
+        .bg-link { background-color: #00897b; }
+        .hover\:bg-link-hover { background-color: #00695c; }
+        .text-link { color: #00897b; }
+        .bg-modal-bg-dark { background-color: rgba(0, 0, 0, 0.7); }
+        .bg-modal-content-bg-light { background-color: #fefefe; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen items-center bg-primary-bg text-primary font-body">
+
+    <header class="text-center py-6 px-4 md:py-10 md:px-5 bg-secondary-bg bg-opacity-90 w-full shadow-md">
+        <h1 class="font-cursive text-4xl md:text-6xl mb-0 text-accent">Silvio e Laine ❤️</h1>
+        <p class="text-base md:text-xl text-secondary">15 de Janeiro de 2020</p>
+    </header>
+
+    <main class="w-[95%] max-w-6xl mx-auto flex-grow px-2 md:px-0">
+        <section id="photoGallery" class="flex overflow-x-hidden whitespace-nowrap py-4 gap-3 justify-start custom-scrollbar cursor-grab active:cursor-grabbing">
+            <img src="imagens/foto5.jpg" alt="Momento feliz 5" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto6.jpg" alt="Momento feliz 6" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto7.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+
+            <img src="imagens/foto1.jpg" alt="Momento feliz 1" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto2.jpg" alt="Momento feliz 2" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto3.jpg" alt="Momento feliz 3" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto4.jpg" alt="Momento feliz 4" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto5.jpg" alt="Momento feliz 5" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto6.jpg" alt="Momento feliz 6" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto7.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto8.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto9.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto10.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto11.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto12.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto13.jpg" alt="Momento feliz 7" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+
+            <img src="imagens/foto1.jpg" alt="Momento feliz 1" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto2.jpg" alt="Momento feliz 2" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+            <img src="imagens/foto3.jpg" alt="Momento feliz 3" class="w-64 h-40 object-cover rounded-xl shadow-md flex-shrink-0 border-primary border">
+        </section>
+
+        <section class="bg-secondary-bg p-6 mx-auto my-8 rounded-xl shadow-xl text-center max-w-3xl leading-relaxed text-base md:p-8 md:my-10 md:text-lg border-primary border bg-opacity-90">
+            <p class="mb-3 text-secondary">
+                "Desde o momento em que nossos caminhos se cruzaram, cada dia ganhou nova luz e propósito. Sua presença trouxe uma alegria que eu jamais imaginei sentir, e cada instante ao seu lado se tornou um verdadeiro presente. Você preenche meu mundo de um jeito único, e sou profundamente grato por compartilhar a vida com você.
+            </p>
+            <p class="mb-3 text-secondary">
+                Ao seu lado, descobri o verdadeiro significado do amor, da parceria e da felicidade. Obrigado por cada sorriso sincero, cada abraço acolhedor e por ser exatamente quem você é. Com você, a vida é infinitamente mais leve, mais bela e mais completa."
+            </p>
+            <p class="font-cursive text-xl md:text-2xl text-accent mt-6 leading-relaxed">
+                De <span class="font-bold text-primary">Silvio</span> para <span class="font-bold text-primary">Laine</span><br>
+                <span class="font-bold text-secondary">15 de Janeiro de 2020</span>
+            </p>
+        </section>
+
+        <section class="text-center my-10 mx-auto max-w-2xl bg-secondary-bg bg-opacity-90 p-6 rounded-xl shadow-xl border-primary border">
+            <h2 class="font-cursive text-3xl md:text-5xl text-accent mb-6 mt-[-10px]">Tempo Juntos</h2>
+            <div class="grid grid-cols-2 gap-4 px-4 md:grid-cols-3 md:gap-5 md:px-5">
+                <div class="bg-primary-bg p-4 rounded-xl shadow-md border-primary border aspect-square flex flex-col justify-center items-center">
+                    <span id="years" class="font-heading text-3xl md:text-5xl font-bold text-primary block mb-0">0</span>
+                    <span class="text-xs md:text-base text-secondary uppercase">ANOS</span>
+                </div>
+                <div class="bg-primary-bg p-4 rounded-xl shadow-md border-primary border aspect-square flex flex-col justify-center items-center">
+                    <span id="months" class="font-heading text-3xl md:text-5xl font-bold text-primary block mb-0">0</span>
+                    <span class="text-xs md:text-base text-secondary uppercase">MESES</span>
+                </div>
+                <div class="bg-primary-bg p-4 rounded-xl shadow-md border-primary border aspect-square flex flex-col justify-center items-center">
+                    <span id="days" class="font-heading text-3xl md:text-5xl font-bold text-primary block mb-0">0</span>
+                    <span class="text-xs md:text-base text-secondary uppercase">DIAS</span>
+                </div>
+                <div class="bg-primary-bg p-4 rounded-xl shadow-md border-primary border aspect-square flex flex-col justify-center items-center">
+                    <span id="hours" class="font-heading text-3xl md:text-5xl font-bold text-primary block mb-0">0</span>
+                    <span class="text-xs md:text-base text-secondary uppercase">HORAS</span>
+                </div>
+                <div class="bg-primary-bg p-4 rounded-xl shadow-md border-primary border aspect-square flex flex-col justify-center items-center">
+                    <span id="minutes" class="font-heading text-3xl md:text-5xl font-bold text-primary block mb-0">0</span>
+                    <span class="text-xs md:text-base text-secondary uppercase">MINUTOS</span>
+                </div>
+                <div class="bg-primary-bg p-4 rounded-xl shadow-md border-primary border aspect-square flex flex-col justify-center items-center">
+                    <span id="seconds" class="font-heading text-3xl md:text-5xl font-bold text-primary block mb-0">0</span>
+                    <span class="text-xs md:text-base text-secondary uppercase">SEGUNDOS</span>
+                </div>
+            </div>
+            <p class="text-lg md:text-2xl text-accent mt-8 leading-relaxed">
+                <div id="alternatingInfo" class="inline-block origin-center transform-gpu">
+                    <span id="alternatingMainText" class="text-primary">0 dias dos namorados</span><br>
+                    <span id="alternatingSubText" class="text-sm md:text-base text-secondary"></span>
+                </div>
+            </p>
+        </section>
+
+        <section class="text-center my-10 mx-auto max-w-4xl bg-secondary-bg bg-opacity-90 p-6 rounded-xl shadow-xl border-primary border">
+            <h2 class="font-cursive text-3xl md:text-5xl text-accent mb-6 mt-[-10px]">Nosso Tempo em Bodas</h2>
+            <div id="bodasGallery" class="flex overflow-x-hidden whitespace-nowrap py-4 gap-6 justify-start custom-scrollbar cursor-grab active:cursor-grabbing">
+                </div>
+        </section>
+
+        <section class="text-center my-10 mx-auto max-w-2xl bg-secondary-bg bg-opacity-90 p-6 rounded-xl shadow-xl border-primary border">
+            <h2 class="font-cursive text-3xl md:text-5xl text-accent mb-6 mt-[-10px]">Nossa Música Especial</h2>
+            <p class="text-lg md:text-xl text-secondary mb-4">
+                Para ouvir nossa música especial, clique no link abaixo:
+            </p>
+            <a href="http://www.youtube.com/watch?v=PhxnVArRhkg" target="_blank" class="inline-block bg-link hover:bg-link-hover text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out">
+                Ouvir "It's been a long, long time" no YouTube
+            </a>
+            <p class="text-sm text-secondary mt-2">(Abre em uma nova aba)</p>
+        </section>
+    </main>
+
+    <footer class="text-center py-6 mt-auto text-xs text-secondary md:py-8 md:text-sm bg-secondary-bg bg-opacity-90 w-full shadow-md">
+        <p>Um presente de amor e carinho.</p>
+    </footer>
+
+    <div id="bodaModal" class="fixed inset-0 bg-modal-bg-dark flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-modal-content-bg-light p-6 rounded-lg shadow-2xl max-w-sm w-full relative border-primary border text-primary">
+            <button id="closeModalBtn" class="absolute top-3 right-3 text-secondary hover:text-primary text-xl font-bold">×</button>
+            <h3 id="modalBodaTitle" class="font-heading text-2xl text-accent mb-3 text-center"></h3>
+            <p id="modalBodaDescription" class="text-secondary text-base leading-relaxed text-center"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
